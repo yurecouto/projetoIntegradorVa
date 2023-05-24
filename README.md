@@ -6,7 +6,7 @@ Instalação e Configuração
 
 Para executar o projeto, siga as instruções abaixo:
 
-    Clone o repositório do projeto: [link do seu repositório]
+    Clone o repositório do projeto: https://github.com/yurecouto/projetoIntegradorVa
     Certifique-se de ter o Python 3.x instalado em seu sistema.
     Crie um ambiente virtual para isolar as dependências do projeto.
     Ative o ambiente virtual.
@@ -15,9 +15,11 @@ Para executar o projeto, siga as instruções abaixo:
     Crie um superusuário para acessar a interface administrativa: python manage.py createsuperuser
     Inicie o servidor local: python manage.py runserver
     Acesse a interface navegável do Django Admin em seu navegador: http://127.0.0.1:8000/admin
+    
+    Todos os endpoints estao mapeados no arquivo "projetoIntegradorVa.json",
+    este arquivo e um arquivo de configuração do Postman, ferramenta para testes http.
 
 ## Endpoints da API
-
 A seguir estão os endpoints disponíveis na API:
 
 ### Registrar aluno: 
