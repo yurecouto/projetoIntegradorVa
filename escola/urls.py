@@ -7,12 +7,13 @@ router.register(r'alunos', AlunoViewSet)
 router.register(r'professores', ProfessorViewSet)
 router.register(r'cursos', CursoViewSet)
 router.register(r'turmas', TurmaViewSet)
-router.register(r'detalhecurso', DetalheCursoViewSet)
-router.register(r'detalheturma', DetalheTurmaViewSet)
 router.register(r'disciplinas', DisciplinaViewSet)
-router.register(r'detalhedisciplina', DetalheDisciplinaViewSet)
-router.register(r'notasaluno', NotasAlunoViewSet)
+
 router.register(r'faltasaluno', FaltasAlunoViewSet)
+router.register(r'notasaluno', NotasAlunoViewSet)
+router.register(r'detalhecurso', DetalheCursoViewSet)
+router.register(r'detalhedisciplina', DetalheDisciplinaViewSet)
+router.register(r'detalheturma', DetalheTurmaViewSet)
 
 urlpatterns = [
     path('turmas/<int:turma_id>/alunos/', listar_alunos_turma, name='listar_alunos_turma'),

@@ -84,8 +84,9 @@ class NotasAluno(models.Model):
     class Meta:
         db_table = 'notasaluno'
 
-    codigo_aluno = models.ForeignKey(Aluno, to_field='matricula', on_delete=models.CASCADE, unique=True)
+    codigo_aluno = models.ForeignKey(Aluno, to_field='matricula', on_delete=models.CASCADE)
     nota = models.IntegerField()
+    disciplina = models.ForeignKey(Disciplina, to_field='id', on_delete=models.CASCADE)
     avaliacao = models.CharField(max_length=4)
     data = models.DateField()
 
@@ -94,7 +95,7 @@ class FaltasAluno(models.Model):
     class Meta:
         db_table = 'faltasaluno'
 
-    codigo_aluno = models.ForeignKey(Aluno, to_field='matricula', on_delete=models.CASCADE, unique=True)
+    codigo_aluno = models.ForeignKey(Aluno, to_field='matricula', on_delete=models.CASCADE)
     codigo_professor = models.ForeignKey(Professor, to_field='registro', on_delete=models.CASCADE)
     codigo_turma = models.ForeignKey(Turma, to_field='codigo', on_delete=models.CASCADE)
     data = models.DateField()
