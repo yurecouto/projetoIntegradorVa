@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "bf8a9834-8e81-4f3d-995f-065c888edf0a",
-		"name": "New Collection",
+		"name": "Django",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -62,7 +62,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"Marelena\",\n    \"sexo\": \"Masculino\",\n    \"matricula\": \"blablabla\",\n    \"data_nascimento\": \"1999-12-31\"\n}\n",
+							"raw": "{\n    \"nome\": \"Anakin Skywalker\",\n    \"sexo\": \"Masculino\",\n    \"matricula\": \"00000001\",\n    \"data_nascimento\": \"1999-12-31\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -94,7 +94,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"Helena\",\n    \"sexo\": \"Masculino\",\n    \"matricula\": \"blablabla\",\n    \"data_nascimento\": \"1999-12-31\"\n}\n",
+							"raw": "{\n    \"matricula\": \"99999999\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -102,7 +102,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/alunos/1/",
+							"raw": "http://127.0.0.1:8000/alunos/2/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -113,7 +113,7 @@
 							"port": "8000",
 							"path": [
 								"alunos",
-								"1",
+								"2",
 								""
 							]
 						}
@@ -224,7 +224,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\": \"Maria Helena\",\n    \"sexo\": \"M\",\n    \"registro\": \"1234567\"\n}",
+							"raw": "{\n    \"nome\": \"Chanceler Palpatine\",\n    \"sexo\": \"M\",\n    \"registro\": \"12345678\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -347,7 +347,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"codigo_aluno\": \"blablabla\",\n    \"nota\": 8,\n    \"avaliacao\": \"va1\",\n    \"data\": \"2022-12-22\"\n}",
+							"raw": "{\n    \"codigo_aluno\": \"00000001\",\n    \"nota\": 8,\n    \"avaliacao\": \"va1\",\n    \"disciplina\": 1,\n    \"data\": \"2022-12-22\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -379,7 +379,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"codigo_aluno\": \"blablabla\",\n    \"codigo_professor\": \"1234567\",\n    \"codigo_turma\": \"00000002\",\n    \"data\": \"2022-12-22\"\n}",
+							"raw": "    {\n        \"codigo_aluno\": \"00000001\",\n        \"codigo_professor\": \"12345678\",\n        \"codigo_turma\": \"00000001\",\n        \"data\": \"2022-12-22\"\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -573,7 +573,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/turmas/",
+							"raw": "http://127.0.0.1:8000/turmas/1/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -584,6 +584,7 @@
 							"port": "8000",
 							"path": [
 								"turmas",
+								"1",
 								""
 							]
 						}
@@ -597,7 +598,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"codigo\": \"00000002\",\n    \"codigo_curso\": \"12345678\"\n}",
+							"raw": "{\n    \"codigo\": \"00000004\",\n    \"codigo_curso\": \"12345678\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -694,7 +695,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"codigo_aluno\": \"blablabla\",\n    \"codigo_professor\": \"1234567\",\n    \"codigo_turma\": \"00000001\"\n}",
+							"raw": "{\n    \"codigo_aluno\": \"00000001\",\n    \"codigo_professor\": \"12345678\",\n    \"codigo_turma\": \"00000001\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
